@@ -1,0 +1,11 @@
+const program = require('commander')
+const path = require('path')
+
+
+program.usage('<project-name>').parse(process.argv)
+
+let projectName = program.args[0]
+console.log(projectName)
+
+
+
