@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const program = require('commander')
 const chalk = require('chalk')
 const exists = require('fs').existsSync
@@ -34,8 +36,9 @@ help()
 
 let projectName = program.args[0]
 var target = path.join(__dirname,'download-temp')
-const fileName = path.join(__dirname,'../',projectName)
-
+const fileName = path.join(process.cwd(),projectName)
+// const fileName = path.join(__dirname,'../',projectName)
+// const fileName = path.relative('../', process.cwd())
 run()
 
 function run(){

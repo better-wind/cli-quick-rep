@@ -1,14 +1,17 @@
 {
   "name": "cli-quick-rep",
-  "version": "1.0.0",
+  "version": "1.0.7",
   "description": "quick build js repsitory",
   "main": "index.js",
   "bin": {
-    "qbr": "bin/init"
+    "qbr": "bin/init",
+    "qbr-init": "bin/init-init",
+    "qbr-wpk": "bin/init-wpk"
   },
+  "preferGlobal": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "qbr": "node bin/init.js"
+    "qbr": "node bin/init"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,7 @@
     "url": "https://github.com/luyi10year/cli-quick-rep/issues"
   },
   "homepage": "https://github.com/luyi10year/cli-quick-rep#readme",
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^2.3.0",
     "commander": "^2.12.2",
     "download-git-repo": "^1.0.1",
@@ -28,6 +31,7 @@
     "inquirer": "^4.0.1",
     "metalsmith": "^2.3.0",
     "ora": "^1.3.0",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "user-home": "^2.0.0"
   }
 }
